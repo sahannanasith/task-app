@@ -5,6 +5,7 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 
 @Slf4j
 public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
+
     public WebAppInitializer() {
         log.debug("Spring is starting..!");
     }
