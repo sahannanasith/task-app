@@ -1,3 +1,4 @@
+/*
 package lk.ijse.dep9.app.dao;
 
 import lk.ijse.dep9.app.dao.custom.impl.ProjectDAOImpl;
@@ -34,3 +35,4 @@ public class DAOFactory {
 
     }
 }
+*/
