@@ -2,7 +2,7 @@
 package lk.ijse.dep9.app.service;
 
 import lk.ijse.dep9.app.service.custom.impl.ProjectTaskServiceImpl;
-import lk.ijse.dep9.app.service.custom.impl.UserServiceImpl;
+import lk.ijse.dep9.app.util.UserServiceImpl;
 
 public class ServiceFactory {
 
