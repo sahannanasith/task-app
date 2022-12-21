@@ -14,18 +14,26 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api/v1/users")
 public class UserController {
+
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping(consumes = "application/json")
     public void createUserAccount(@Valid @RequestBody UserDTO user){
         System.out.println(user);
     }
-    @PatchMapping("/me")
-    public void updateUserAccountDetails(){
+
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    @PatchMapping(value = "/me", consumes = "application/json")
+    public void updateUserAccountDetails(@Valid @RequestBody UserDTO user){
+        System.out.println(user);
     }
+
     @GetMapping("/me")
     public void getUserAccountDetails(){
+
     }
+
     @DeleteMapping("/me")
     public void deleteUserAccount(){
+
     }
 }
